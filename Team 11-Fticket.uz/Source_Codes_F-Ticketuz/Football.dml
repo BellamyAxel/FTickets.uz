@@ -1,0 +1,81 @@
+insert into Stadiums(stadium_id,stadium_name,city,capacity,match_id,sector_id)values
+	("s11001","Milliy","Tashkent",45000, null, "001"),
+	("s11002","Lokomotiv","Tashkent",35000,  null, "001"),
+	("s11003","Lokomotiv","Tashkent",35000,  null, "001"),
+	("s11004","Lokomotiv","Tashkent",35000,  null, "001"),
+	("s11005","Lokomotiv","Tashkent",35000,  null, "001"),
+	("s11006","Lokomotiv","Tashkent",35000,  null, "001"),
+	("s11007","Lokomotiv","Tashkent",35000,  null, "001"),
+	("s11008","Lokomotiv","Tashkent",35000,  null, "001"),		
+	("s11009","Lokomotiv","Tashkent",35000,  null, "001"),
+	("s11010","Lokomotiv","Tashkent",35000,  null, "001"),
+	("s11011","Lokomotiv","Tashkent",35000,  null, "001"),
+	("s11012","Lokomotiv","Tashkent",35000,  null, "001"),
+	("s11013","Lokomotiv","Tashkent",35000,  null, "001"),	
+	("s11014","Lokomotiv","Tashkent",35000,  null, "001"),
+	("s11015","Lokomotiv","Tashkent",35000,  null, "001"),
+	("s11016","Lokomotiv","Tashkent",35000,  null, "001"),
+	("s11017","Lokomotiv","Tashkent",35000,  null, "001");
+	
+	
+
+insert into Teams(team_id,team_name,team_stadium,team_city)
+	values("t2100","Pakhtakor", "Pakhtakor Stadium","Tashkent"),
+		  ("t2101", "Bunyodkor", "Milliy Stadium","Tashkent"),
+	 	  ("t2102","Lokomotiv", "Lokomotiv Stadium","Tashkent"),
+		  ("t2103","Navbahor", "Navbahor Stadium","Namangan"),
+	      ("t2104","Metallurg", "Metallurg Stadium", "Bekobod"),
+		  ("t2106","Buhoro", "Buhoro Stadium","Buhoro"),
+	 	  ("t2107", "Kokand", "Kokand Stadium", "Kokand"),
+		  ("t2108", "Olmaliq", "Olmaliq Stadium", "Olmaliq"),
+		  ("t2109", "Sugdiyona", "Sugdiona Stadium", "Jizzakh"),
+		  ("t2110", "Nasaf", "Nasaf Stadium", "Karshi"),
+		  ("t2120", "Mashal", "Mashal Stadium", "Muborak"),
+		  ("t2130", "Neftchi", "Fergana Stadium", "Fergana"),
+		  ("t2140", "Dinamo", "Dinamo Stadium", "Samarkand"),
+		  ("t2150", "Qizilqum", "Nasaf Stadium", "Zarafshon"),
+		  ("t2160", "Shurtan", "Shurtan Stadium", "Guzor"),
+		  ("t2170", "Andijon", "Andijan Stadium", "Andijan"),
+		  ("t2180", "Xorazm", "Khorezm Stadium", "Khorezm");
+
+
+	insert into Customers(customer_id,customer_name,customer_passno,customer_tel,order_id,ticket_id)
+		values("c4100","Shokhrukhmirzo Mirzakhmedov","AA3634835","+998998771547","or5102","ti6102"),
+			  ("c4100","Azizbek Avazov","AA2344334","+998919845678","or5101","ti6101"),
+			  ("c4100","Aziz Riskulov","AA4567898","+998909223313","or5103","ti6103"),
+			  ("c4100","Azizbek Avazov","AA1243765","+998934488228","or5104","ti6104");
+
+	insert into Booking(order_id,ticket_id,customer_id,order_datetime,order_whichgame)
+		values("or5101","ti6101","customer_id",TO_DATE('11/09/2019', 'DD/MM/YYYY'),"Bunyodkor-Pakhtakor"),
+			  ("or5101","ti6101","customer_id",TO_DATE('17/12/2019', 'DD/MM/YYYY'),"Bunyodkor-Pakhtakor"),	
+			  ("or5101","ti6101","customer_id",TO_DATE('17/12/2019', 'DD/MM/YYYY'),"Bunyodkor-Pakhtakor"),	
+			  ("or5101","ti6101","customer_id",TO_DATE('17/02/2019', 'DD/MM/YYYY'),"Bunyodkor-Pakhtakor"),	
+			  ("or5101","ti6101","customer_id",TO_DATE('11/10/2019', 'DD/MM/YYYY'),"Bunyodkor-Pakhtakor"),	
+			  ("or5101","ti6101","customer_id",TO_DATE('21/01/2019', 'DD/MM/YYYY'),"Bunyodkor-Pakhtakor"),	
+			  ("or5101","ti6101","customer_id",TO_DATE('17/12/2019', 'DD/MM/YYYY'),"Bunyodkor-Pakhtakor"),	
+			  ("or5101","ti6101","customer_id",TO_DATE('17/12/2019', 'DD/MM/YYYY'),"Bunyodkor-Pakhtakor"),	
+			  ("or5101","ti6101","customer_id",TO_DATE('17/12/2019', 'DD/MM/YYYY'),"Bunyodkor-Pakhtakor"),	
+			  ("or5101","ti6101","customer_id",TO_DATE('17/12/2019', 'DD/MM/YYYY'),"Bunyodkor-Pakhtakor"),	
+			  ("or5101","ti6101","customer_id",TO_DATE('17/12/2019', 'DD/MM/YYYY'),"Bunyodkor-Pakhtakor"),	
+			  ("or5101","ti6101","customer_id",TO_DATE('17/12/2019', 'DD/MM/YYYY'),"Bunyodkor-Pakhtakor");
+
+	insert into TicketSeller(seller_id,seller_name,seller_details,seller_stadium)		
+		values("se1110"),();
+
+
+
+	insert into Matches(match_id,match_who,team_id,match_datetime,match_location)
+		values("ma5101","Bunyodkor - Pakhtakor",TO_DATE('11/09/2019', 'DD/MM/YYYY',"Milliy Stadium"),
+			("ma5101","Navbahor - Lokomativ",TO_DATE('17/12/2019', 'DD/MM/YYYY',"Navbahor Stadium"),	
+			("ma5101","Qizilqum - AGMK",TO_DATE('17/12/2019', 'DD/MM/YYYY',"Qizilqum Stadium"),	
+			("ma5101","Kokand - Andijon",TO_DATE('17/02/2019', 'DD/MM/YYYY',"Kokand Stadium"),	
+			("ma5101","Nasaf - Olmaliq",TO_DATE('11/10/2019', 'DD/MM/YYYY',"Nasaf Stadium"),	
+			("ma5101","Metallurg - Buhoro",TO_DATE('21/01/2019', 'DD/MM/YYYY',"Metallurg Stadium"),	
+			("ma5101","Sugdiona - Mashal",TO_DATE('17/12/2019', 'DD/MM/YYYY',"Sugdiona Stadium"),	
+			("ma5101","Xorazm - Shurtan",TO_DATE('17/12/2019', 'DD/MM/YYYY',"Xorazm Stadium"),	
+			("ma5101","Pakhtakor - Andijon",TO_DATE('17/12/2019', 'DD/MM/YYYY',"Pakhtakor Stadium"),	
+			("ma5101","Navbahor - Bunyodkor",TO_DATE('17/12/2019', 'DD/MM/YYYY',"Navbahor Stadium"),	
+			("ma5101","Dinamo - Mashal",TO_DATE('17/12/2019', 'DD/MM/YYYY',"Dinamo Stadium"),	
+			("ma5101","Bunyodkor - Kokand",TO_DATE('17/12/2019', 'DD/MM/YYYY',"Milliy Stadium");
+
+
